@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Keller-Area Buyer Briefing | Aastha Dahal</title>
+<meta name="description" content="Research briefing: new and like-new 2-story homes up to $650k in Keller, TX and surrounding communities — verified listings, new-construction communities, tax comparison.">
+<style>
+  :root {
+    --ground: #FCFAF5;
+    --surface: #F4F0E6;
+    --ink: #232840;
+    --muted: #6B6F80;
+    --accent: #C88A0A;
+    --accent-deep: #2C3563;
+    --line: #E2DCCC;
+    --card: #FFFFFF;
+    --accent-soft: rgba(200, 138, 10, 0.10);
+    --shadow: 0 1px 2px rgba(35,40,64,.06), 0 8px 24px rgba(35,40,64,.07);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #14182A;
+      --surface: #1B2036;
+      --ink: #EDEAE0;
+      --muted: #9BA0B4;
+      --accent: #E3A82F;
+      --accent-deep: #A9B4E8;
+      --line: #2A3050;
+      --card: #1E2440;
+      --accent-soft: rgba(227, 168, 47, 0.12);
+      --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.35);
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground: #14182A;
+    --surface: #1B2036;
+    --ink: #EDEAE0;
+    --muted: #9BA0B4;
+    --accent: #E3A82F;
+    --accent-deep: #A9B4E8;
+    --line: #2A3050;
+    --card: #1E2440;
+    --accent-soft: rgba(227, 168, 47, 0.12);
+    --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.35);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font: 17px/1.65 "Helvetica Neue", -apple-system, "Segoe UI", Arial, sans-serif;
+    background: var(--ground);
+    color: var(--ink);
+  }
+  .display { font-family: Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif; font-weight: 400; }
+  .container { max-width: 960px; margin: 0 auto; padding: 0 24px 80px; }
+  header.hero { padding: 64px 0 34px; border-bottom: 1px solid var(--line); margin-bottom: 40px; background: var(--surface); }
+  .eyebrow { font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); font-weight: 600; }
+  .eyebrow a { color: var(--accent-deep); text-decoration: none; }
+  .eyebrow a:hover { text-decoration: underline; }
+  h1 { font-size: clamp(34px, 5.5vw, 54px); line-height: 1.08; margin: 14px 0 14px; text-wrap: balance; }
+  .sub { color: var(--muted); max-width: 64ch; }
+  .sub strong { color: var(--ink); }
+  h2 { font-size: clamp(24px, 3.4vw, 32px); line-height: 1.15; margin: 56px 0 8px; text-wrap: balance; }
+  h2 .no { color: var(--accent); font-size: 14px; vertical-align: 0.5em; margin-right: 8px; font-family: "Helvetica Neue", sans-serif; font-weight: 700; letter-spacing: 0.06em; }
+  h3 { font-size: 17px; font-weight: 600; margin: 24px 0 6px; }
+  p { max-width: 70ch; margin: 10px 0; }
+  .lede { font-size: 18px; }
+  a { color: var(--accent-deep); }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  .keyfacts { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; margin: 30px 0 8px; }
+  .fact { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px; box-shadow: var(--shadow); }
+  .fact .label { font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); font-weight: 600; }
+  .fact .value { font-family: Palatino, "Palatino Linotype", Georgia, serif; font-size: 22px; margin-top: 5px; }
+  .fact .note { font-size: 13px; color: var(--muted); margin-top: 3px; }
+
+  .paths { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 14px; margin: 24px 0; }
+  .path { background: var(--card); border: 1px solid var(--line); border-top: 3px solid var(--accent); border-radius: 10px; padding: 18px 20px; box-shadow: var(--shadow); }
+  .path h3 { margin: 0 0 8px; }
+  .path p { font-size: 14.5px; margin: 6px 0; }
+  .path .trade { color: var(--muted); font-size: 13.5px; }
+
+  .tablewrap { overflow-x: auto; margin: 18px 0; border: 1px solid var(--line); border-radius: 10px; background: var(--card); box-shadow: var(--shadow); }
+  table { border-collapse: collapse; width: 100%; font-size: 14px; min-width: 660px; }
+  th { text-align: left; font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); padding: 11px 14px; border-bottom: 1px solid var(--line); background: var(--surface); white-space: nowrap; }
+  td { padding: 10px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  tr:last-child td { border-bottom: none; }
+  td.num { font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .grouprow td { background: var(--surface); font-weight: 700; font-size: 12px; text-transform: uppercase; letter-spacing: 0.07em; color: var(--accent); }
+  .pill { display: inline-block; font-size: 11.5px; font-weight: 600; padding: 2px 9px; border-radius: 99px; background: var(--accent-soft); color: var(--accent); white-space: nowrap; }
+
+  .callout { border-left: 3px solid var(--accent); background: var(--accent-soft); border-radius: 0 8px 8px 0; padding: 14px 18px; margin: 22px 0; max-width: 74ch; }
+  .callout p { margin: 4px 0; font-size: 14.5px; }
+  .callout .t { font-weight: 700; color: var(--accent); font-size: 12.5px; text-transform: uppercase; letter-spacing: 0.08em; }
+
+  ul.list { padding-left: 20px; max-width: 70ch; }
+  ul.list li { margin: 7px 0; }
+  .small { font-size: 13.5px; color: var(--muted); max-width: 82ch; }
+  footer { margin-top: 60px; border-top: 1px solid var(--line); padding-top: 18px; }
+  .cta { display: inline-block; margin-top: 16px; background: var(--accent); color: #FCFAF5; font-weight: 600; padding: 12px 24px; border-radius: 8px; text-decoration: none; }
+  .cta:hover { filter: brightness(1.06); }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="container" style="padding-bottom:0">
+    <p class="eyebrow"><a href="/#realestate">← aasthadahal.com</a> &nbsp;·&nbsp; Buyer Research &nbsp;·&nbsp; Updated Aug 26, 2026</p>
+    <h1 class="display">Keller-Area Buyer Briefing</h1>
+    <p class="sub">What <strong>up to $650,000</strong> actually buys in a new or like-new <strong>2-story home</strong> in Keller, TX and the surrounding communities. Every listing below was verified individually on Aug 25–26, 2026 — this is the same research I run for my own investments, applied to a buyer's search. Prices move fast; everything is re-confirmed against MLS before showings.</p>
+  </div>
+</header>
+
+<main class="container">
+
+<div class="keyfacts">
+  <div class="fact"><div class="label">New builds in Keller proper</div><div class="value">None ≤ $650k</div><div class="note">Cheapest new home in Keller starts ~$855k</div></div>
+  <div class="fact"><div class="label">Keller ISD matches</div><div class="value">6 homes · 76244</div><div class="note">2020–2022 builds, $469k–$580k</div></div>
+  <div class="fact"><div class="label">$600–650k sweet spot</div><div class="value">LeTara &amp; Pecan Square</div><div class="note">3,200–3,800 sq ft at ~$165–190/sq ft</div></div>
+  <div class="fact"><div class="label">Confirmed zeros</div><div class="value">7 areas</div><div class="note">Grapevine, Colleyville, Southlake, HEB, Keller 76248, Watauga, Trophy Club</div></div>
+</div>
+
+<h2 class="display"><span class="no">01</span>The Keller-ISD shortlist — 76244, 4+ bed, backyard</h2>
+<p class="lede">The tightest version of this search — Keller-ISD zips, 4+ bedrooms, 2-story, built 2019 or newer, a real backyard — produces exactly <strong>six homes</strong>, all in 76244. Zip 76248 has zero (its one 2019+ match is single-story).</p>
+<div class="tablewrap">
+<table>
+  <tr><th>Rank</th><th>Address</th><th>Price</th><th>Bd/Ba</th><th>Sq ft</th><th>Built</th><th>Lot / yard</th><th>DOM</th></tr>
+  <tr><td class="num">1</td><td><strong>11509 Falcon Trace Dr</strong></td><td class="num">$560,000</td><td class="num">4/3</td><td class="num">3,368</td><td class="num">2022</td><td>~7,500 sf — "oversized backyard, room to play"</td><td class="num">70 · negotiable</td></tr>
+  <tr><td class="num">2</td><td><strong>11428 Colonial Trace Ln</strong> — primary + 2 beds down, 1 bed + game/media up</td><td class="num">$559,900</td><td class="num">4/3</td><td class="num">3,291</td><td class="num">2022</td><td>~7,500 sf, fenced + oversized covered patio</td><td class="num">4 · open Sun 1–3</td></tr>
+  <tr><td class="num">3</td><td><strong>4924 Dewy Rose Ln</strong> (Keller Crossing)</td><td class="num">$580,000</td><td class="num">5/4</td><td class="num">2,803</td><td class="num">2022</td><td><strong>0.26 acre — biggest yard</strong></td><td class="num">138 · best leverage</td></tr>
+  <tr><td class="num">4</td><td><strong>4852 Nickeldale Ct</strong> — cul-de-sac, 3-car tandem</td><td class="num">$494,500</td><td class="num">4/3.5</td><td class="num">3,030</td><td class="num">2020</td><td>~7,150 sf; verify yard size in person</td><td class="num">113 · negotiable</td></tr>
+  <tr><td class="num">5</td><td><strong>4829 Porque Ct</strong></td><td class="num">$474,900</td><td class="num">4/3</td><td class="num">2,559</td><td class="num">2021</td><td>~6,570 sf, premium corner lot</td><td class="num">62</td></tr>
+  <tr><td class="num">6</td><td><strong>3732 Trillium Dr</strong></td><td class="num">$469,000</td><td class="num">4/2.5</td><td class="num">2,866</td><td class="num">2021</td><td>~5,500 sf — smallest lot of the six</td><td class="num">132 · negotiable</td></tr>
+</table>
+</div>
+<p class="small">All six carry Fort Worth taxes (~2.2%+) — each parcel should be checked for Heritage/Park Glen PID on TAD.org. Excluded by the year filter: 4328 Oak Chase Dr ($599,950, 3,729 sf, built 2015).</p>
+
+<h2 class="display"><span class="no">02</span>The one decision that shapes everything</h2>
+<p class="lede">Even at $650k, a 2020+ 2-story doesn't exist in Keller proper — one constraint bends, and each choice leads somewhere different:</p>
+<div class="paths">
+  <div class="path">
+    <h3>Keep Keller ISD → 76244 resale</h3>
+    <p>Six verified 2020–2022 builds with Keller mailing addresses, $469k–$580k, 2,559–3,368 sq ft.</p>
+    <p class="trade">Trade-off: Fort Worth taxes (~2.2%+), smaller lots than old Keller.</p>
+  </div>
+  <div class="path">
+    <h3>Go brand-new → NW corridor or Eagle Mountain</h3>
+    <p>Wellington, Treeline, Talon Hills, Pecan Square — 2-story quick move-ins $475k–$650k with $20k+ incentives and rate buydowns running now.</p>
+    <p class="trade">Trade-off: Northwest / EMS / Argyle schools; some communities carry heavy special-district taxes.</p>
+  </div>
+  <div class="path">
+    <h3>Max value → like-new resale, wider net</h3>
+    <p>Verified 2020+ listings in Haslet, 76131, 76179, Justin, Argyle, Corinth — up to 3,964 sq ft at $490k. Nine have sat 80+ days: real negotiating room.</p>
+    <p class="trade">Trade-off: reselling against the builder's next phase in heavy-supply areas.</p>
+  </div>
+</div>
+
+<h2 class="display"><span class="no">03</span>New construction — communities with 2-story homes ≤ $650k</h2>
+<div class="tablewrap">
+<table>
+  <tr><th>Community · City</th><th>Builders</th><th>2-story ≤ $650k</th><th>ISD</th><th>Tax &amp; district notes</th></tr>
+  <tr><td><strong>Wellington</strong> · Haslet (~7 mi)</td><td>American Legend, K.Hov, Pulte, Highland, GFO</td><td class="num">$540k · 2,745 sf<br>$585k · 3,178 sf<br>$640k · 3,713 sf</td><td>Northwest</td><td><span class="pill">No MUD/PID</span> ~2.3% total</td></tr>
+  <tr><td><strong>Treeline</strong> · Justin (~11 mi)</td><td>Highland, Am. Legend, DW, Beazer +4</td><td class="num">$475k–$590k · five QMIs<br>1,949–3,249 sf</td><td>Northwest</td><td>~2.48% · HOA incl. internet · $20k or 4.99% buydown offers</td></tr>
+  <tr><td><strong>Talon Hills</strong> · FW 76179, Eagle Mountain (~14 mi)</td><td>Graham Hart, Perry +2</td><td class="num">$599,900 · 3,219 sf<br>$649,900 · 3,416 sf · ready now</td><td>EM-Saginaw</td><td>Lake-adjacent · verify MUD/PID · HOA $650/yr</td></tr>
+  <tr><td><strong>Cambridge Manor</strong> · NRH (~5 mi, closest)</td><td>Sandlin</td><td class="num">build-to-order from $574,900</td><td>Birdville</td><td>Standard city taxes · small infill</td></tr>
+  <tr><td><strong>Pecan Square</strong> · Northlake (~11 mi)</td><td>Coventry, David Weekley, DR Horton</td><td class="num">$595k–$644k resale/spec<br>DW 60' to-be-built from $612,990</td><td>Northwest</td><td><span class="pill">MMD +0.705</span> ~2.43% · big amenities</td></tr>
+  <tr><td><strong>Timberbrook</strong> · Justin (~12 mi)</td><td>Bloomfield, Sandlin</td><td class="num">$625k–$650k · ~3,000–3,480 sf</td><td>Northwest</td><td>Verify parcel MUD/PID</td></tr>
+  <tr><td><strong>Retreat at Harvest</strong> · Argyle (~13 mi)</td><td>David Weekley, Tri Pointe</td><td class="num">$608k · 2,304 sf (verify — thinning)</td><td><strong>Argyle (A-rated)</strong></td><td>~2.42% · narrow 31' lots</td></tr>
+  <tr><td><strong>Country Lakes</strong> · Denton 76226 (~16 mi)</td><td>Bloomfield, Sandlin</td><td class="num">$599,990 · 3,026 sf<br>$620,990 · 3,187 sf</td><td>Argyle / Denton by phase</td><td>Verify ISD per address</td></tr>
+  <tr><td><strong>Trails of Elizabeth Creek</strong> · Northlake (~13 mi)</td><td>D.R. Horton</td><td class="num">$375k–$468k · to 2,946 sf</td><td>Northwest</td><td><span class="pill">No MUD/PID reported</span> max value</td></tr>
+</table>
+</div>
+<p class="small"><strong>Confirmed dead ends ≤$650k:</strong> Keller proper (from $855k), Grapevine/Colleyville/HEB (sold out or $719k+), Southlake, Trophy Club, Westlake. Furst Ranch (Flower Mound, Argyle ISD): under $650k currently buys only a 1-story; first move-ins 2027.</p>
+
+<h2 class="display"><span class="no">04</span>Like-new resale highlights (built 2020+, verified active)</h2>
+<div class="tablewrap">
+<table>
+  <tr><th>Address</th><th>Price</th><th>Bd/Ba</th><th>Sq ft</th><th>Built</th><th>ISD</th></tr>
+  <tr class="grouprow"><td colspan="6">Haslet 76052 — deepest pool (79 active matches)</td></tr>
+  <tr><td>2120 Draco Dr</td><td class="num">$450,000</td><td class="num">4/3.5</td><td class="num">3,052</td><td class="num">2022</td><td>Northwest</td></tr>
+  <tr><td>825 Crest Breeze Dr</td><td class="num">$469,900</td><td class="num">4/3.5</td><td class="num">3,402</td><td class="num">2020</td><td>Northwest</td></tr>
+  <tr><td>561 LeTara Ranch Rd (LeTara)</td><td class="num">$595,000</td><td class="num">4/2.5</td><td class="num">3,744</td><td class="num">2021</td><td>Northwest</td></tr>
+  <tr><td>566 Long Meadow Dr (LeTara)</td><td class="num">$625,000</td><td class="num">5/3.5</td><td class="num">3,781</td><td class="num">2022</td><td>Northwest</td></tr>
+  <tr class="grouprow"><td colspan="6">Fort Worth 76131 / 76179 — Eagle Mountain side</td></tr>
+  <tr><td>505 Winterwood Ct</td><td class="num">$465,000</td><td class="num">5/3.5</td><td class="num">3,221</td><td class="num">2021</td><td>Northwest</td></tr>
+  <tr><td>8000 Gangway Dr</td><td class="num">$490,000</td><td class="num">5/3.5</td><td class="num">3,964</td><td class="num">2022</td><td>EM-Saginaw</td></tr>
+  <tr><td>5617 Mountain Island Dr</td><td class="num">$500,000</td><td class="num">4/3.5</td><td class="num">3,604</td><td class="num">2021</td><td>EM-Saginaw</td></tr>
+  <tr><td>12605 Pallesen St</td><td class="num">$589,990</td><td class="num">4/4.5</td><td class="num">3,686</td><td class="num">2023</td><td>Northwest</td></tr>
+  <tr class="grouprow"><td colspan="6">Justin · Northlake · Roanoke · Argyle</td></tr>
+  <tr><td>17265 Oxborough Dr, Justin</td><td class="num">$530,000</td><td class="num">5/4</td><td class="num">3,371</td><td class="num">2021</td><td>Northwest</td></tr>
+  <tr><td>15600 Wild Cherry Ln, Roanoke (Seventeen Lakes)</td><td class="num">$549,999</td><td class="num">4/3</td><td class="num">2,831</td><td class="num">2021</td><td>Northwest</td></tr>
+  <tr><td>11490 Misty Ridge Dr, Roanoke-area</td><td class="num">$599,900</td><td class="num">4/4</td><td class="num">3,202</td><td class="num">2020</td><td>Argyle</td></tr>
+  <tr><td>2812 Dunbar Dr, Northlake (Pecan Square)</td><td class="num">$629,900</td><td class="num">4/3.5</td><td class="num">3,383</td><td class="num">2022</td><td>Northwest</td></tr>
+  <tr><td>1122 20th St, Northlake (Pecan Square)</td><td class="num">$650,000</td><td class="num">4/4</td><td class="num">3,431</td><td class="num">2024</td><td>Argyle</td></tr>
+</table>
+</div>
+<p class="small">A fuller verified list (33 homes) is available on request — including North Richland Hills, Corinth, and Flower Mound options. Where nothing exists under these criteria (verified zip by zip): Keller 76248, Grapevine, Colleyville, Southlake, Watauga, Hurst, Bedford, Trophy Club, Westlake.</p>
+
+<h2 class="display"><span class="no">05</span>Taxes — the hidden $350/month</h2>
+<p>Total 2025 adopted rates per $100 of value, before homestead exemption. The same $650k house costs very different amounts to hold:</p>
+<div class="tablewrap">
+<table>
+  <tr><th>Area</th><th>Total rate</th><th>Gross tax on $650k</th><th>Watch for</th></tr>
+  <tr><td>Roanoke / Northlake (non-district sections)</td><td class="num">1.57–1.60</td><td class="num">$10,200–10,400</td><td>Cheapest to hold</td></tr>
+  <tr><td>Keller · Keller ISD</td><td class="num">1.84</td><td class="num">$11,932</td><td>No MUD/PID in established areas</td></tr>
+  <tr><td>Haslet (Wellington) · Northwest ISD</td><td class="num">1.86</td><td class="num">$12,110</td><td>Wellington has no MUD/PID</td></tr>
+  <tr><td>Justin · Northwest ISD</td><td class="num">1.94+</td><td class="num">$12,610+</td><td>New sections can add MUD/PID</td></tr>
+  <tr><td>NRH · Birdville ISD</td><td class="num">2.15</td><td class="num">$13,961</td><td>—</td></tr>
+  <tr><td>FW 76244 · Keller ISD</td><td class="num">2.22 (2.36 w/ PID)</td><td class="num">$14,422–15,364</td><td><span class="pill">Heritage / Park Glen PIDs</span></td></tr>
+  <tr><td>FW 76131 / 76179 · EM-Saginaw ISD</td><td class="num">~2.45</td><td class="num">~$15,900</td><td>Verify per parcel</td></tr>
+  <tr><td>Pecan Square, Northlake</td><td class="num">2.27</td><td class="num">$14,755</td><td><span class="pill">MMD adds 0.705</span> — funds the amenities</td></tr>
+</table>
+</div>
+<div class="callout">
+  <p class="t">Before any offer</p>
+  <p>Pull the parcel's actual taxing entities on TAD.org or dentoncad.com. Special districts are subdivision-specific, not city-wide — two houses a street apart can differ by $4,000/yr. The spread between areas equals roughly $55–70k of purchasing power at current rates.</p>
+</div>
+
+<h2 class="display"><span class="no">06</span>Schools &amp; market timing, briefly</h2>
+<ul class="list">
+  <li><strong>Keller ISD</strong> — TEA rating B. Enrollment down 4,000+ since 2020; the district-split plan was dropped in May 2025, and three intermediate schools close after 2026-27.</li>
+  <li><strong>Northwest ISD</strong> — TEA rating B. Fastest-growing district in North Texas; new schools open 2026-27, a fourth high school in 2027. Expect boundary changes in fast-growth pockets.</li>
+  <li><strong>Argyle ISD</strong> — TEA rating A (92). Reachable in budget via Retreat at Harvest and select Pecan Square / Roanoke-area homes.</li>
+  <li><strong>Eagle Mountain–Saginaw ISD</strong> — serves Talon Hills / 76179 / west-76131; the largest homes per dollar in this search sit here.</li>
+  <li><strong>Market:</strong> DFW leans buyer-friendly (~5 months of new-home supply; builders stacking incentives), while Keller-ISD pockets stay tight. Several verified listings have sat 80+ days — those sellers are negotiable; fresh listings move in days.</li>
+</ul>
+
+<footer>
+  <p class="small">Prepared by Aastha Dahal · TREC Sales Agent, License #830185-SA · Sponsored by PR Advisors, LLC · Data verified Aug 25–26, 2026 from public listing portals, builder websites, the Old Republic Title 2025 DFW tax-rate guide, city and ISD published rates, and TEA 2025 accountability ratings. All prices, availability, incentives, and tax rates change frequently and require verification against MLS and county appraisal-district records. School information is factual district data; buyers should independently verify school assignment for any specific property. Texas Real Estate Commission <a href="https://www.trec.texas.gov/forms/consumer-protection-notice">Consumer Protection Notice</a> · Information About Brokerage Services available on request.</p>
+  <a class="cta" href="/#contact">Start your home search →</a>
+</footer>
+
+</main>
+</body>
+</html>
