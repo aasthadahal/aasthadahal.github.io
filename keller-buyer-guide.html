@@ -111,6 +111,7 @@
     vertical-align: 1px;
   }
   .lb:hover, .lb:focus-visible { background: var(--accent-soft); border-color: var(--accent); }
+  @media (pointer: coarse) { .lb { width: 24px; height: 24px; font-size: 12px; margin-left: 5px; } }
 
   /* Acronym tooltips */
   abbr[data-full] {
@@ -209,8 +210,8 @@
   <tr class="grouprow"><td colspan="6">Haslet 76052: deepest pool (79 active matches)</td></tr>
   <tr><td><span class="addr" data-a="2120 Draco Dr, Haslet, TX 76052" data-r="https://www.redfin.com/TX/Haslet/2120-Draco-Dr-76052/home/179484341">2120 Draco Dr</span></td><td class="num">$450,000</td><td class="num">4/3.5</td><td class="num">3,052</td><td class="num">2022</td><td>Northwest</td></tr>
   <tr><td><span class="addr" data-a="825 Crest Breeze Dr, Haslet, TX 76052" data-r="https://www.redfin.com/TX/Haslet/825-Crest-Breeze-Dr-76052/home/173906112">825 Crest Breeze Dr</span></td><td class="num">$469,900</td><td class="num">4/3.5</td><td class="num">3,402</td><td class="num">2020</td><td>Northwest</td></tr>
-  <tr><td><span class="addr" data-a="561 LeTara Ranch Rd, Haslet, TX 76052" data-z="https://www.zillow.com/homedetails/561-Letara-Ranch-Rd-Haslet-TX-76052/337104933_zpid/">561 LeTara Ranch Rd</span> (LeTara)</td><td class="num">$595,000</td><td class="num">4/2.5</td><td class="num">3,744</td><td class="num">2021</td><td>Northwest</td></tr>
-  <tr><td><span class="addr" data-a="566 Long Meadow Dr, Haslet, TX 76052">566 Long Meadow Dr</span> (LeTara)</td><td class="num">$625,000</td><td class="num">5/3.5</td><td class="num">3,781</td><td class="num">2022</td><td>Northwest</td></tr>
+  <tr><td><span class="addr" data-a="561 LeTara Ranch Rd, Haslet, TX 76052" data-r="https://www.redfin.com/TX/Haslet/561-Letara-Ranch-Rd-76052/home/173911644" data-z="https://www.zillow.com/homedetails/561-Letara-Ranch-Rd-Haslet-TX-76052/337104933_zpid/">561 LeTara Ranch Rd</span> (LeTara)</td><td class="num">$595,000</td><td class="num">4/2.5</td><td class="num">3,744</td><td class="num">2021</td><td>Northwest</td></tr>
+  <tr><td><span class="addr" data-a="566 Long Meadow Dr, Haslet, TX 76052" data-r="https://www.redfin.com/TX/Haslet/566-Long-Meadow-Dr-76052/home/173911665">566 Long Meadow Dr</span> (LeTara)</td><td class="num">$625,000</td><td class="num">5/3.5</td><td class="num">3,781</td><td class="num">2022</td><td>Northwest</td></tr>
   <tr class="grouprow"><td colspan="6">Fort Worth 76131 / 76179: Eagle Mountain side</td></tr>
   <tr><td><span class="addr" data-a="505 Winterwood Ct, Fort Worth, TX 76131" data-r="https://www.redfin.com/TX/Fort-Worth/505-Winterwood-Ct-76131/home/176633854">505 Winterwood Ct</span></td><td class="num">$465,000</td><td class="num">5/3.5</td><td class="num">3,221</td><td class="num">2021</td><td>Northwest</td></tr>
   <tr><td><span class="addr" data-a="8000 Gangway Dr, Fort Worth, TX 76179" data-r="https://www.redfin.com/TX/Fort-Worth/8000-Gangway-Dr-76179/home/176639353">8000 Gangway Dr</span></td><td class="num">$490,000</td><td class="num">5/3.5</td><td class="num">3,964</td><td class="num">2022</td><td>EM-Saginaw</td></tr>
@@ -220,8 +221,8 @@
   <tr><td><span class="addr" data-a="17265 Oxborough Dr, Justin, TX 76247" data-r="https://www.redfin.com/TX/Justin/17265-Oxborough-Dr-76247/home/203433913">17265 Oxborough Dr</span>, Justin</td><td class="num">$530,000</td><td class="num">5/4</td><td class="num">3,371</td><td class="num">2021</td><td>Northwest</td></tr>
   <tr><td><span class="addr" data-a="15600 Wild Cherry Ln, Roanoke, TX 76262" data-r="https://www.redfin.com/TX/Roanoke/15600-Wild-Cherry-Ln-76262/home/168882879">15600 Wild Cherry Ln</span>, Roanoke (Seventeen Lakes)</td><td class="num">$549,999</td><td class="num">4/3</td><td class="num">2,831</td><td class="num">2021</td><td>Northwest</td></tr>
   <tr><td><span class="addr" data-a="11490 Misty Ridge Dr, Roanoke, TX 76262" data-r="https://www.redfin.com/TX/Roanoke/11490-Misty-Ridge-Dr-76262/home/109696974">11490 Misty Ridge Dr</span>, Roanoke-area</td><td class="num">$599,900</td><td class="num">4/4</td><td class="num">3,202</td><td class="num">2020</td><td>Argyle</td></tr>
-  <tr><td><span class="addr" data-a="2812 Dunbar Dr, Northlake, TX 76247">2812 Dunbar Dr</span>, Northlake (Pecan Square)</td><td class="num">$629,900</td><td class="num">4/3.5</td><td class="num">3,383</td><td class="num">2022</td><td>Northwest</td></tr>
-  <tr><td><span class="addr" data-a="1122 20th St, Northlake, TX 76226">1122 20th St</span>, Northlake (Pecan Square)</td><td class="num">$650,000</td><td class="num">4/4</td><td class="num">3,431</td><td class="num">2024</td><td>Argyle</td></tr>
+  <tr><td><span class="addr" data-a="2812 Dunbar Dr, Northlake, TX 76247" data-r="https://www.redfin.com/TX/Northlake/2812-Dunbar-Dr-76247/home/176704794">2812 Dunbar Dr</span>, Northlake (Pecan Square)</td><td class="num">$629,900</td><td class="num">4/3.5</td><td class="num">3,383</td><td class="num">2022</td><td>Northwest</td></tr>
+  <tr><td><span class="addr" data-a="1122 20th St, Northlake, TX 76226" data-r="https://www.redfin.com/TX/Northlake/1122-20th-St-76226/home/187815334">1122 20th St</span>, Northlake (Pecan Square)</td><td class="num">$650,000</td><td class="num">4/4</td><td class="num">3,431</td><td class="num">2024</td><td>Argyle</td></tr>
 </table>
 </div>
 <p class="small">A fuller verified list (33 homes) is available on request, including North Richland Hills, Corinth, and Flower Mound options. Where nothing exists under these criteria (verified zip by zip): Keller 76248, Grapevine, Colleyville, Southlake, Watauga, Hurst, Bedford, Trophy Club, Westlake.</p>
